@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baby Shower Martin Eduardo</title>
+  <meta name="description" content="Invitación digital Baby Shower Martin Eduardo" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f7fbfe;
+      --bg-soft:#eef7fc;
+      --white:#ffffff;
+      --blue-1:#cfe7f5;
+      --blue-2:#eaf6fc;
+      --blue-3:#afc6d9;
+      --blue-4:#d9e4ec;
+      --blue-5:#8ea9bd;
+      --title:#5c7285;
+      --text:#748392;
+      --text-dark:#4c6173;
+      --line:rgba(142, 169, 189, 0.18);
+      --shadow:0 16px 40px rgba(132, 159, 180, 0.16);
+      --shadow-soft:0 8px 22px rgba(132, 159, 180, 0.10);
+      --radius-xl:32px;
+      --radius-lg:24px;
+      --radius-md:18px;
+      --radius-sm:14px;
+      --container:1100px;
+      --transition:all .35s ease;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:"Montserrat", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(207,231,245,.7), transparent 24%),
+        radial-gradient(circle at 92% 14%, rgba(234,246,252,.9), transparent 20%),
+        radial-gradient(circle at 20% 80%, rgba(217,228,236,.5), transparent 18%),
+        linear-gradient(180deg, #fbfdff 0%, #f4f9fc 100%);
+      overflow-x:hidden;
+    }
+
+    img{
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container{
+      width:min(92%, var(--container));
+      margin:0 auto;
+      position:relative;
+      z-index:2;
+    }
+
+    .section{
+      padding:90px 0;
+      position:relative;
+    }
+
+    .narrow{
+      max-width:830px;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      font-family:"Cormorant Garamond", serif;
+      font-size:1.8rem;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color:var(--blue-5);
+      font-weight:600;
+      margin-bottom:14px;
+    }
+
+    .title{
+      font-family:"Cormorant Garamond", serif;
+      font-size:clamp(2.2rem, 5vw, 4rem);
+      line-height:1.05;
+      color:var(--title);
+      font-weight:600;
+      margin-bottom:16px;
+    }
+
+    .text{
+      font-size:1rem;
+      line-height:1.85;
+      color:var(--text);
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:54px;
+      padding:0 26px;
+      border-radius:999px;
+      border:none;
+      font-size:.95rem;
+      font-weight:600;
+      transition:var(--transition);
+      cursor:pointer;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+    }
+
+    .btn-primary{
+      background:linear-gradient(135deg, var(--blue-1), var(--blue-3));
+      color:var(--text-dark);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,.88);
+      color:var(--text-dark);
+      border:1px solid rgba(175,198,217,.35);
+      backdrop-filter:blur(8px);
+    }
+
+    .btn-whatsapp{
+      background:linear-gradient(135deg, #e7f8ef, #d9eef8);
+      color:var(--text-dark);
+    }
+
+    .card{
+      background:rgba(255,255,255,.82);
+      border:1px solid rgba(175,198,217,.28);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(10px);
+    }
+
+    /* Decoraciones */
+    .sky{
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
+      overflow:hidden;
+    }
+
+    .cloud{
+      position:absolute;
+      width:140px;
+      height:58px;
+      background:rgba(255,255,255,.55);
+      border-radius:100px;
+      filter:blur(1px);
+      animation:floatCloud 10s ease-in-out infinite;
+    }
+
+    .cloud::before,
+    .cloud::after{
+      content:"";
+      position:absolute;
+      border-radius:50%;
+      background:rgba(255,255,255,.7);
+    }
+
+    .cloud::before{
+      width:54px;
+      height:54px;
+      left:18px;
+      top:-16px;
+    }
+
+    .cloud::after{
+      width:68px;
+      height:68px;
+      right:14px;
+      top:-28px;
+    }
+
+    .cloud.c1{ top:90px; left:2%; animation-delay:0s; }
+    .cloud.c2{ top:320px; right:4%; animation-delay:1.2s; }
+    .cloud.c3{ top:760px; left:8%; animation-delay:2s; }
+
+    .sparkle{
+      position:absolute;
+      color:rgba(142,169,189,.7);
+      font-size:1rem;
+      animation:twinkle 3s ease-in-out infinite;
+    }
+
+    .sparkle.s1{ top:150px; right:16%; }
+    .sparkle.s2{ top:430px; left:15%; animation-delay:1s; }
+    .sparkle.s3{ top:980px; right:20%; animation-delay:1.8s; }
+
+    /* HERO */
+    .hero{
+      min-height:100svh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:110px 0 70px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 18% 30%, rgba(207,231,245,.75), transparent 22%),
+        radial-gradient(circle at 78% 22%, rgba(234,246,252,.9), transparent 18%),
+        linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.04));
+      z-index:1;
+    }
+
+    .hero-layout{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:34px;
+      align-items:center;
+    }
+
+    .hero-copy{
+      text-align:left;
+    }
+
+    .hero-tag{
+      display:inline-block;
+      font-family:"Cormorant Garamond", serif;
+      margin-bottom:16px;
+      font-size:1.8rem;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color:var(--blue-5);
+      font-weight:600;
+    }
+
+    .hero-title-small{
+      font-family:"Cormorant Garamond", serif;
+      color:var(--title);
+      font-size:clamp(1.4rem, 3vw, 2rem);
+      margin-bottom:8px;
+    }
+
+    .hero-title{
+      font-family:"Cormorant Garamond", serif;
+      color:var(--title);
+      font-weight:700;
+      font-size:clamp(3.6rem, 8vw, 6.2rem);
+      line-height:.95;
+      margin-bottom:18px;
+    }
+
+    .hero-phrase{
+      font-size:1.04rem;
+      line-height:1.9;
+      max-width:680px;
+      margin-bottom:22px;
+    }
+
+    .hero-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-bottom:28px;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:11px 16px;
+      border-radius:999px;
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(175,198,217,.28);
+      color:var(--text-dark);
+      font-size:.92rem;
+      font-weight:600;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+
+    .hero-visual{
+      position:relative;
+    }
+
+    .hero-frame{
+      padding:18px;
+      border-radius:34px;
+      background:rgba(255,255,255,.74);
+      border:1px solid rgba(175,198,217,.28);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(10px);
+    }
+
+    .hero-illustration{
+      min-height:470px;
+      border-radius:26px;
+      position:relative;
+      overflow:hidden;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(255,255,255,.9), transparent 25%),
+        linear-gradient(180deg, #f4fbff 0%, #deedf6 100%);
+      border:1px dashed rgba(175,198,217,.5);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:34px;
+      text-align:center;
+    }
+
+    .moon{
+      position:absolute;
+      width:84px;
+      height:84px;
+      border-radius:50%;
+      background:rgba(255,255,255,.65);
+      top:24px;
+      right:30px;
+      box-shadow:inset -12px 0 0 rgba(234,246,252,.9);
+    }
+
+    .tiny-stars{
+      position:absolute;
+      inset:0;
+    }
+
+    .tiny-stars span{
+      position:absolute;
+      color:rgba(142,169,189,.7);
+      font-size:.9rem;
+      animation:twinkle 3s ease-in-out infinite;
+    }
+
+    .tiny-stars span:nth-child(1){ top:80px; left:50px; }
+    .tiny-stars span:nth-child(2){ top:120px; right:74px; animation-delay:1s; }
+    .tiny-stars span:nth-child(3){ top:190px; left:80px; animation-delay:1.6s; }
+    .tiny-stars span:nth-child(4){ bottom:120px; right:60px; animation-delay:2.1s; }
+
+    .elephant-wrap{
+      position:relative;
+      z-index:2;
+      max-width:320px;
+      width:100%;
+    }
+    
+    .dumbo-img{
+  width:320px;
+  height:auto !important;
+  display:block;
+  margin:0 auto 14px auto;
+  object-fit:contain !important;
+  filter:drop-shadow(0 12px 20px rgba(120,150,180,.35));
+}
+    
+
+
+    /* Section headings */
+    .section-heading{
+      text-align:center;
+      margin-bottom:38px;
+    }
+
+    /* Welcome */
+    .welcome-box{
+      padding:34px 28px;
+    }
+
+    /* Gallery */
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(12, 1fr);
+      gap:18px;
+    }
+
+    .gallery-item{
+      grid-column:span 4;
+      position:relative;
+      overflow:hidden;
+      min-height:260px;
+      border-radius:24px;
+      background:rgba(255,255,255,.86);
+      box-shadow:var(--shadow);
+      border:1px solid rgba(175,198,217,.24);
+    }
+
+    .gallery-item.wide{
+      grid-column:span 8;
+    }
+
+    .gallery-item::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, transparent 45%, rgba(71,96,117,.18) 100%);
+      z-index:1;
+    }
+
+    .gallery-item img{
+      transition:transform .5s ease;
+      background:linear-gradient(180deg, #edf6fb, #dcebf4);
+    }
+
+    .gallery-item:hover img{
+      transform:scale(1.04);
+    }
+
+    .gallery-label{
+      position:absolute;
+      left:14px;
+      bottom:14px;
+      z-index:2;
+      background:rgba(255,255,255,.84);
+      color:var(--text-dark);
+      border:1px solid rgba(255,255,255,.35);
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:.82rem;
+      font-weight:600;
+      box-shadow:var(--shadow-soft);
+    }
+
+    /* Video */
+    .video-box{
+      padding:18px;
+    }
+
+    .video-frame{
+      width:100%;
+      aspect-ratio:16 / 9;
+      border:none;
+      border-radius:24px;
+      background:linear-gradient(180deg, #eef7fb, #d8e8f2);
+    }
+
+    .video-note{
+      margin-top:14px;
+      text-align:center;
+      font-size:.92rem;
+      color:var(--text);
+    }
+
+    /* Countdown */
+    .countdown-grid{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:16px;
+      margin-top:28px;
+    }
+
+    .countdown-item{
+      padding:24px 14px;
+      border-radius:22px;
+      background:rgba(255,255,255,.86);
+      border:1px solid rgba(175,198,217,.24);
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+
+    .countdown-item .num{
+      display:block;
+      font-family:"Cormorant Garamond", serif;
+      font-size:clamp(2.6rem, 5vw, 4rem);
+      line-height:1;
+      color:var(--title);
+      font-weight:700;
+      margin-bottom:8px;
+    }
+
+    .countdown-item .label{
+      font-size:.78rem;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      color:var(--blue-5);
+      font-weight:600;
+    }
+
+    /* Details */
+    .details-card{
+      padding:28px;
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .details-grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:16px;
+      margin-bottom:22px;
+    }
+
+    .details-item{
+      padding:24px 18px;
+      border-radius:22px;
+      background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(241,248,252,.82));
+      border:1px solid rgba(175,198,217,.2);
+      text-align:center;
+    }
+
+    .details-icon{
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      margin:0 auto 12px;
+      background:var(--blue-2);
+      font-size:1.2rem;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .details-item h3{
+      font-size:1rem;
+      color:var(--title);
+      margin-bottom:8px;
+    }
+
+    .details-item p{
+      font-size:.95rem;
+      line-height:1.7;
+      color:var(--text);
+    }
+
+    .details-actions{
+      text-align:center;
+    }
+
+    /* Gifts */
+    .gift-card{
+      padding:34px 26px;
+      text-align:center;
+    }
+
+    .gift-event{
+      margin:12px 0 22px;
+      font-family:"Cormorant Garamond", serif;
+      font-size:clamp(2rem, 5vw, 3.2rem);
+      color:var(--title);
+      font-weight:700;
+    }
+
+    /* RSVP */
+    .rsvp-card{
+      padding:36px 26px;
+      text-align:center;
+    }
+
+    .rsvp-note{
+      margin-top:16px;
+      font-size:.94rem;
+      color:var(--text);
+    }
+
+    /* Closing */
+    .closing-box{
+      padding:34px 26px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .closing-box::before{
+      content:"";
+      position:absolute;
+      inset:auto -40px -40px auto;
+      width:150px;
+      height:150px;
+      background:radial-gradient(circle, rgba(207,231,245,.6), transparent 70%);
+      border-radius:50%;
+    }
+
+    .closing-text{
+      font-size:1.06rem;
+      line-height:1.9;
+      color:var(--text-dark);
+    }
+
+    /* Footer */
+    footer{
+      padding:34px 0 46px;
+      text-align:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .footer-decor{
+      color:var(--blue-5);
+      font-size:1rem;
+      margin-bottom:10px;
+      letter-spacing:.14em;
+    }
+
+    .footer-text{
+      color:var(--text);
+      font-size:.95rem;
+      margin-bottom:8px;
+    }
+
+    .footer-small{
+      color:var(--blue-5);
+      font-size:.86rem;
+    }
+
+    /* Reveal on scroll */
+    .reveal{
+      opacity:0;
+      transform:translateY(26px);
+      transition:opacity .9s ease, transform .9s ease;
+    }
+
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 960px){
+      .hero-layout{
+        grid-template-columns:1fr;
+      }
+
+      .hero-copy{
+        text-align:center;
+      }
+
+      .hero-meta,
+      .hero-actions{
+        justify-content:center;
+      }
+
+      .gallery-item{
+        grid-column:span 6;
+      }
+
+      .gallery-item.wide{
+        grid-column:span 6;
+      }
+
+      .details-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 700px){
+      .section{
+        padding:74px 0;
+      }
+
+      .hero{
+        min-height:auto;
+        padding:92px 0 54px;
+      }
+
+      .hero-illustration{
+        min-height:390px;
+      }
+
+      .countdown-grid{
+        grid-template-columns:repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px){
+      .gallery-grid{
+        grid-template-columns:1fr;
+      }
+
+      .gallery-item,
+      .gallery-item.wide{
+        grid-column:auto;
+        min-height:260px;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+      .hero-actions{
+        flex-direction:column;
+      }
+
+      .hero-meta{
+        flex-direction:column;
+      }
+
+      .countdown-grid{
+        gap:12px;
+      }
+
+      .countdown-item{
+        padding:18px 10px;
+      }
+
+      .details-card,
+      .gift-card,
+      .rsvp-card,
+      .closing-box,
+      .welcome-box,
+      .video-box{
+        padding:24px 18px;
+      }
+    }
+
+    @keyframes floatCloud{
+      0%,100%{ transform:translateY(0); }
+      50%{ transform:translateY(-10px); }
+    }
+
+    @keyframes twinkle{
+      0%,100%{ opacity:.45; transform:scale(1); }
+      50%{ opacity:1; transform:scale(1.12); }
+    }
+  </style>
+</head>
+<body>
+
+  <!--
+    ============================================================
+    PLACEHOLDERS OBLIGATORIOS PARA PERSONALIZAR
+    ============================================================
+    [FOTO_MAMA]
+    [FOTO_PAPA]
+    [FOTO_HERMANA]
+    [FOTO_FAMILIAR_1]
+    [FOTO_FAMILIAR_2]
+    [VIDEO_REVELACION]
+    [LINK_GOOGLE_MAPS]
+    [LINK_MESA_LIVERPOOL]
+    [LINK_WHATSAPP]
+    [FRASE_PRINCIPAL]
+    [PDF_BASE_REFERENCIA]
+    ============================================================
+  -->
+
+  <div class="sky" aria-hidden="true">
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+    <div class="sparkle s1">✦</div>
+    <div class="sparkle s2">✦</div>
+    <div class="sparkle s3">✦</div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-layout">
+      <div class="hero-copy reveal">
+        <span class="hero-tag">Baby Shower</span>
+        <div class="hero-title-small"></div>
+        <h1 class="hero-title">Martín Eduardo</h1>
+
+        <p class="hero-phrase">
+          Un pedacito de cielo llegará pronto a nuestras vidas.
+        </p>
+
+        <div class="hero-meta">
+          <div class="pill">📅 02 de mayo</div>
+          <div class="pill">🕒 3:30 PM</div>
+          <div class="pill">📍 Av. Colón 423, Centro Tepeaca</div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#bienvenida" class="btn btn-primary">Ver invitación</a>
+          <a href="#detalles" class="btn btn-secondary">Detalles del evento</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-frame">
+          <div class="hero-illustration">
+            <div class="moon"></div>
+            <div class="tiny-stars">
+              <span>✦</span>
+              <span>✦</span>
+              <span>✦</span>
+              <span>✦</span>
+            </div>
+
+            <div class="elephant-wrap">
+  <img src="img/jumbo.png" class="dumbo-img" alt="Dumbo Baby">
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BIENVENIDA -->
+  <section id="bienvenida" class="section">
+    <div class="container narrow">
+      <div class="card welcome-box reveal">
+        <div class="eyebrow">Con mucho amor</div>
+        <h2 class="title">Una dulce espera para celebrar juntos</h2>
+        <p class="text">
+          Estamos viviendo una etapa llena de amor, emoción y esperanza. Queremos compartir con ustedes la alegría de esperar a Martin Eduardo y celebrar juntos este momento tan especial para nuestra familia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="eyebrow">Nuestra familia</div>
+        <h2 class="title">Recuerdos de este hermoso camino</h2>
+        <p class="text narrow">
+          Cada fotografía guarda ternura, ilusión y amor. Esta sección está lista para personalizarse con sus momentos más especiales.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal">
+          <img src="[FOTO_MAMA]" alt="Foto de mamá">
+          <div class="gallery-label">Mamá</div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img src="[FOTO_PAPA]" alt="Foto de papá">
+          <div class="gallery-label">Papá</div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img src="[FOTO_HERMANA]" alt="Foto de hermana">
+          <div class="gallery-label">Hermana</div>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img src="[FOTO_FAMILIAR_1]" alt="Foto familiar 1">
+          <div class="gallery-label">Familia</div>
+        </div>
+
+        <div class="gallery-item wide reveal">
+          <img src="[FOTO_FAMILIAR_2]" alt="Foto familiar 2">
+          <div class="gallery-label">Nuestro amor crece</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="eyebrow">Un recuerdo inolvidable</div>
+        <h2 class="title">Así vivimos uno de los momentos más especiales</h2>
+        <p class="text narrow">
+          Aquí puedes insertar el video de revelación desde YouTube, Google Drive o cualquier enlace embebible.
+        </p>
+      </div>
+
+      <div class="card video-box reveal">
+        <!-- Reemplazar [VIDEO_REVELACION] por un enlace embed -->
+        <iframe
+          class="video-frame"
+          src="video_rev.mov"
+          title="Video de revelación"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+        <p class="video-note">
+          Recuerda usar un enlace en formato embebido.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="section">
+    <div class="container narrow">
+      <div class="section-heading reveal">
+        <div class="eyebrow">Ya falta poco</div>
+        <h2 class="title">Cuenta regresiva</h2>
+        <p class="text">
+          Cada día nos acerca más a esta celebración tan especial.
+        </p>
+      </div>
+
+      <div class="countdown-grid reveal">
+        <div class="countdown-item">
+          <span class="num" id="days">00</span>
+          <span class="label">Días</span>
+        </div>
+        <div class="countdown-item">
+          <span class="num" id="hours">00</span>
+          <span class="label">Horas</span>
+        </div>
+        <div class="countdown-item">
+          <span class="num" id="minutes">00</span>
+          <span class="label">Minutos</span>
+        </div>
+        <div class="countdown-item">
+          <span class="num" id="seconds">00</span>
+          <span class="label">Segundos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETALLES -->
+  <section id="detalles" class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="eyebrow">Detalles del evento</div>
+        <h2 class="title">Nos encantará compartir este día contigo</h2>
+      </div>
+
+      <div class="card details-card reveal">
+        <div class="details-grid">
+          <div class="details-item">
+            <div class="details-icon">📅</div>
+            <h3>Fecha</h3>
+            <p>02 de mayo</p>
+          </div>
+
+          <div class="details-item">
+            <div class="details-icon">🕒</div>
+            <h3>Hora</h3>
+            <p>3:30 PM</p>
+          </div>
+
+          <div class="details-item">
+            <div class="details-icon">📍</div>
+            <h3>Lugar</h3>
+            <p>Av. Colón 423, Centro Tepeaca</p>
+          </div>
+        </div>
+
+        <div class="details-actions">
+          <a href="https://maps.app.goo.gl/j6bxbYiQZw66BtnM6" target="_blank" class="btn btn-secondary">Ver ubicación</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MESA DE REGALOS -->
+  <section class="section">
+    <div class="container narrow">
+      <div class="card gift-card reveal">
+        <div class="eyebrow">Mesa de regalos</div>
+        <h2 class="title">Un detalle con mucho cariño</h2>
+        <p class="text">
+          Tu presencia será lo más importante para nosotros, pero si deseas hacernos un obsequio, aquí encontrarás nuestra mesa de regalos.
+        </p>
+
+        <div class="gift-event">51965733</div>
+
+        <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51965733" target="_blank" class="btn btn-primary">
+          Ver mesa de regalos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="section">
+    <div class="container narrow">
+      <div class="card rsvp-card reveal">
+        <div class="eyebrow">Confirmación</div>
+        <h2 class="title">Nos encantará contar contigo</h2>
+        <p class="text">
+          Por favor, confirma tu asistencia con cariño. Será un gusto compartir este momento tan especial contigo.
+        </p>
+
+        <div style="margin-top:22px;">
+          <a href="http://wa.me/522212660633" target="_blank" class="btn btn-whatsapp">
+            Confirmar asistencia
+          </a>
+        </div>
+
+        <p class="rsvp-note">
+          Número para confirmar asistencia: <strong>2212660633</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENSAJE FINAL -->
+  <section class="section">
+    <div class="container narrow">
+      <div class="card closing-box reveal">
+        <div class="eyebrow">Con mucha ilusión</div>
+        <h2 class="title">Nuestro mayor regalo será tu compañía</h2>
+        <p class="closing-text">
+          Compartir con ustedes la alegría, la ternura y la emoción de esperar a Martin Eduardo hará este día todavía más especial para nuestra familia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-decor">☁ ✦ 🐘 ✦ ☁</div>
+      <p class="footer-text">Gracias por acompañarnos con tanto cariño.</p>
+      <div class="footer-small">Baby Shower Martin Eduardo</div>
+    </div>
+  </footer>
+
+  <script>
+    // =========================================================
+    // PERSONALIZACIÓN IMPORTANTE
+    // =========================================================
+    // [PDF_BASE_REFERENCIA]
+    // Usa el contenido y esencia del PDF actual como guía visual y textual.
+
+    // Reemplaza [FRASE_PRINCIPAL] directamente en el HTML por:
+    // “Entre sueños, ilusión y mucho amor, esperamos la llegada de nuestro bebé.
+    // Nos haría muy felices que nos acompañaras a celebrar este momento tan especial.”
+
+    // =========================================================
+    // CUENTA REGRESIVA
+    // =========================================================
+    // Ajusta el año si lo necesitas.
+    const eventDate = new Date("2026-05-02T15:30:00");
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = eventDate - now;
+
+      const days = document.getElementById("days");
+      const hours = document.getElementById("hours");
+      const minutes = document.getElementById("minutes");
+      const seconds = document.getElementById("seconds");
+
+      if (diff <= 0) {
+        days.textContent = "00";
+        hours.textContent = "00";
+        minutes.textContent = "00";
+        seconds.textContent = "00";
+        return;
+      }
+
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+
+      days.textContent = String(d).padStart(2, "0");
+      hours.textContent = String(h).padStart(2, "0");
+      minutes.textContent = String(m).padStart(2, "0");
+      seconds.textContent = String(s).padStart(2, "0");
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // =========================================================
+    // REVEAL ON SCROLL
+    // =========================================================
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting){
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
